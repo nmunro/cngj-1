@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://images/environment/graveyardtilesetnew/png/BG.png" type="Texture" id=4]
+[ext_resource path="res://female-zombie.tscn" type="PackedScene" id=5]
+
+[node name="level5" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 512, 304 )
+scale = Vector2( 0.512, 0.526465 )
+z_index = -1
+texture = ExtResource( 4 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 512, 560 )
+scale = Vector2( 0.125, 0.125 )
+
+[node name="floor" parent="." instance=ExtResource( 3 )]
+position = Vector2( 515, 608 )
+scale = Vector2( 8.5, 0.25 )
+
+[node name="wall_r" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1040, 276 )
+scale = Vector2( 0.25, 5 )
+
+[node name="wall_l" parent="." instance=ExtResource( 3 )]
+position = Vector2( -16, 276 )
+scale = Vector2( 0.25, 5 )
+
+[node name="exit5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 192 )
+
+[node name="female-zombie" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1000, 560 )
+scale = Vector2( 0.125, 0.125 )
+
+[node name="female-zombie4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 24, 560 )
+scale = Vector2( 0.125, 0.125 )
+
+[node name="female-zombie2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 776, 184 )
+scale = Vector2( 0.125, 0.125 )
+
+[node name="female-zombie3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 184, 192 )
+scale = Vector2( 0.125, 0.125 )
+
+[node name="tile" parent="." instance=ExtResource( 3 )]
+position = Vector2( 368, 496 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 784, 496 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 176, 432 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 976, 304 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 816, 208 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 144, 208 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 48, 304 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 720, 112 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 304, 112 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="tile4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 480, 232 )
+scale = Vector2( 5, 0.25 )

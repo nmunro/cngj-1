@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Upbeat Rock ( 30 Sec Edit ).wav-bcf64ed58e82528e5c0523afd7a1640e.sample"
+
+[deps]
+
+source_file="res://audio/Upbeat-Rock/Upbeat Rock ( 30 Sec Edit ).wav"
+dest_files=[ "res://.import/Upbeat Rock ( 30 Sec Edit ).wav-bcf64ed58e82528e5c0523afd7a1640e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

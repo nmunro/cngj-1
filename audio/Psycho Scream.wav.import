@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Psycho Scream.wav-4adc1b324a993c43ebfcd93f76ee0a7c.sample"
+
+[deps]
+
+source_file="res://audio/Psycho Scream.wav"
+dest_files=[ "res://.import/Psycho Scream.wav-4adc1b324a993c43ebfcd93f76ee0a7c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
