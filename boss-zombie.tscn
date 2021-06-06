@@ -57,7 +57,7 @@ animations = [ {
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 35 ), ExtResource( 5 ), ExtResource( 33 ), ExtResource( 13 ), ExtResource( 37 ), ExtResource( 15 ), ExtResource( 23 ), ExtResource( 14 ), ExtResource( 7 ), ExtResource( 19 ), ExtResource( 9 ), ExtResource( 10 ) ],
-"loop": true,
+"loop": false,
 "name": "die",
 "speed": 5.0
 }, {
@@ -91,3 +91,17 @@ stream = ExtResource( 47 )
 
 [node name="attack-sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 48 )
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = -177.0
+margin_top = -236.0
+margin_right = 165.0
+margin_bottom = -207.0
+custom_colors/font_color = Color( 0.203922, 0.843137, 0.0901961, 1 )
+custom_colors/font_color_shadow = Color( 0.116527, 0.664062, 0.279076, 1 )
+step = 1.0
+value = 100.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

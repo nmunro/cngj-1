@@ -16,8 +16,9 @@ func hit():
 	if not alive:
 		return
 		
+	get_node("ProgressBar").value = health
 	health -= 1
-	if health >= 0:
+	if health <= 0:
 		die()
 	
 func attack(entity):
@@ -33,11 +34,13 @@ func die():
 	if not alive:
 		return
 		
+	alive = false	
 	get_node("CollisionShape2D").disabled = true
 	remove_from_group("bosses")
-	alive = false
 	get_node("die-sound").play()
 	sprite.play("die")
+	yield(sprite, "animation_finished")
+	sprite.stop()
 	
 func _process(_delta):
 	if alive:
