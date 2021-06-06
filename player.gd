@@ -34,7 +34,9 @@ func die():
 	get_node("die-sound").play()
 	sprite.play("die")
 	yield(sprite, "animation_finished")
-	get_tree().change_scene("res://gameover.tscn")
+	var status = get_tree().change_scene("res://gameover.tscn")
+	if not status == OK:
+		print("Error", status)
 	
 func attack():
 	var weapon = Weapon.instance()
@@ -66,22 +68,34 @@ func _physics_process(delta):
 			
 		elif collision.collider.is_in_group("exit"):
 			if collision.collider.name == "exit1":
-				get_tree().change_scene("res://level2.tscn")
+				var status = get_tree().change_scene("res://level2.tscn")
+				if not status == OK:
+					print("Error", status)
 				
 			elif collision.collider.name == "exit2":
-				get_tree().change_scene("res://level3.tscn")
+				var status = get_tree().change_scene("res://level3.tscn")
+				if not status == OK:
+					print("Error", status)
 			
 			elif collision.collider.name == "exit3":
-				get_tree().change_scene("res://level4.tscn")
+				var status = get_tree().change_scene("res://level4.tscn")
+				if not status == OK:
+					print("Error", status)
 				
 			elif collision.collider.name == "exit4":
-				get_tree().change_scene("res://level5.tscn")
+				var status = get_tree().change_scene("res://level5.tscn")
+				if not status == OK:
+					print("Error", status)
 			
 			elif collision.collider.name == "exit5":
-				get_tree().change_scene("res://boss.tscn")
+				var status = get_tree().change_scene("res://boss.tscn")
+				if not status == OK:
+					print("Error", status)
 				
 			elif collision.collider.name == "exit6":
-				get_tree().change_scene("res://victory.tscn")
+				var status = get_tree().change_scene("res://victory.tscn")
+				if not status == OK:
+					print("Error", status)
 							
 			get_node("music").stop()
 	

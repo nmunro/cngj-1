@@ -4,7 +4,9 @@ var clickable : bool = false
 
 func _input(event):
 	if event is InputEventMouseButton and clickable:
-		get_tree().change_scene("res://level1.tscn")
+		var status = get_tree().change_scene("res://level1.tscn")
+		if not status == OK:
+			print("Error", status)
 
 func _on_StaticBody2D_mouse_entered():
 	clickable = true
