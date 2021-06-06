@@ -60,7 +60,8 @@ func _physics_process(delta):
 	
 	for obj in get_slide_count():
 		var collision = get_slide_collision(obj)
-		if collision.collider.is_in_group("enemies"):
+		
+		if collision.collider.is_in_group("enemies") or collision.collider.is_in_group("bosses"):
 			die()
 			
 		elif collision.collider.is_in_group("exit"):
