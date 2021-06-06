@@ -32,4 +32,5 @@ func _physics_process(delta):
 	
 	elif collision.collider.is_in_group("bosses"):
 		collision.collider.hit()
+		
 	queue_free()
