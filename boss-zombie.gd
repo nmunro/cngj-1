@@ -32,9 +32,11 @@ func attack(entity):
 
 func die():
 	if not alive:
+		get_node("ProgressBar").value = 0
 		return
 		
-	alive = false	
+	alive = false
+	get_node("ProgressBar").value = 0
 	get_node("CollisionShape2D").disabled = true
 	remove_from_group("bosses")
 	get_node("die-sound").play()
