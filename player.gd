@@ -23,9 +23,6 @@ func _process(_delta):
 	elif not is_on_floor():
 		sprite.play("jump")
 		
-	elif Input.is_action_just_pressed("attack"):
-		attack()
-		
 	else:
 		sprite.play("idle")
 		
@@ -109,3 +106,6 @@ func _physics_process(delta):
 		
 	elif velocity.x > 0:
 		sprite.flip_h = false
+		
+	elif Input.is_action_just_pressed("attack"):
+		attack()
