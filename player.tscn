@@ -51,7 +51,7 @@
 [ext_resource path="res://images/player/png/Run__001.png" type="Texture" id=49]
 [ext_resource path="res://images/player/png/Idle__005.png" type="Texture" id=50]
 [ext_resource path="res://images/player/png/Jump__004.png" type="Texture" id=51]
-[ext_resource path="res://audio/Upbeat-Rock/Upbeat Rock ( Loop ).wav" type="AudioStream" id=52]
+[ext_resource path="res://audio/dramatic-riser--by-rafael-krux-from-filmmusic-io.mp3" type="AudioStream" id=52]
 [ext_resource path="res://audio/Psycho Scream.wav" type="AudioStream" id=53]
 
 [sub_resource type="RectangleShape2D" id=1]
