@@ -51,9 +51,6 @@ func _physics_process(delta):
 	sprite.flip_h = position.x - player.position.x >= 0
 	position = position.move_toward(Vector2(player.position.x, 560), delta * speed)
 	
-	if not is_on_floor():
-		velocity.y += jump_force
-	
 	for obj in get_slide_count():
 		var collision = get_slide_collision(obj)
 
